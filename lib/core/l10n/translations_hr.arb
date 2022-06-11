@@ -1,0 +1,590 @@
+{
+  "appName": "Invoice",
+  "@appName": {
+    "type": "text",
+    "description": ""
+  },
+  "generalError": "Došlo je do greške.",
+  "@generalError": {
+    "type": "text",
+    "description": ""
+  },
+  "generalErrorMandatory": "Podatak je obavezan",
+  "@generalErrorMandatory": {
+    "type": "text",
+    "description": ""
+  },
+  "generalErrorSetCompany": "Tvrtka nije postavljena. Postavi tvrtku ili se obrati adminu",
+  "@generalErrorSetCompany": {
+    "type": "text",
+    "description": ""
+  },
+  "loginGoogleSignIn": "Google prijava",
+  "@loginGoogleSignIn": {
+    "type": "text",
+    "description": ""
+  },
+  "companyNoDataEnteredYet": "Još nisu dodani podaci tvrtke.",
+  "@companyNoDataEnteredYet": {
+    "type": "text",
+    "description": ""
+  },
+  "companyNoDataAddData": "Dodavanje podataka",
+  "@companyNoDataAddData": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditBtnEdit": "Uredi",
+  "@companyEditBtnEdit": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditBtnEditItems": "Robe, usluge i jedinice mjere",
+  "@companyEditBtnEditItems": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelName": "Naziv",
+  "@companyEditLabelName": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelAddress": "Adresa",
+  "@companyEditLabelAddress": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelCity": "Grad",
+  "@companyEditLabelCity": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelPostcode": "Poštanski broj",
+  "@companyEditLabelPostcode": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelOwner": "Vlasnik",
+  "@companyEditLabelOwner": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelOwnerAddress": "Adresa vlasnika",
+  "@companyEditLabelOwnerAddress": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelCompanyId": "OIB",
+  "@companyEditLabelCompanyId": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelIBAN": "IBAN",
+  "@companyEditLabelIBAN": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelCountry": "Država",
+  "@companyEditLabelCountry": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelBankName": "Naziv banke",
+  "@companyEditLabelBankName": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelEmail": "Email",
+  "@companyEditLabelEmail": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelPhone": "Telefon",
+  "@companyEditLabelPhone": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelWeb": "Web",
+  "@companyEditLabelWeb": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelCustomerType": "Vrsta kupca",
+  "@companyEditLabelCustomerType": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelCustomerTypeDomestic": "Domaći klijent",
+  "@companyEditLabelCustomerTypeDomestic": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelCustomerTypeForeign": "Strani klijent",
+  "@companyEditLabelCustomerTypeForeign": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelVatId": "PDV ID",
+  "@companyEditLabelVatId": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditLabelMainCurrency": "Domaća valuta",
+  "@companyEditLabelMainCurrency": {
+    "type": "text",
+    "description": ""
+  },
+  "companyEditBtnSave": "Spremi",
+  "@companyEditBtnSave": {
+    "type": "text",
+    "description": ""
+  },
+  "companyDataPostcodeAndCity": "{postcode}, {city}",
+  "@companyDataPostcodeAndCity": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "postcode": {
+        "type": "String"
+      },
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataCompanyId": "OIB: {companyId}",
+  "@companyDataCompanyId": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "companyId": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataVatId": "PDV ID: {vatId}",
+  "@companyDataVatId": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "vatId": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataIBAN": "IBAN: {iban}",
+  "@companyDataIBAN": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "iban": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataBank": "Banka: {bankName}",
+  "@companyDataBank": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "bankName": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataMainCurrency": "Domaća valuta: {mainCurrency}",
+  "@companyDataMainCurrency": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "mainCurrency": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataEmail": "Email: {email}",
+  "@companyDataEmail": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataPhone": "Tel: {phone}",
+  "@companyDataPhone": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "companyDataWeb": "Web: {web}",
+  "@companyDataWeb": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "web": {
+        "type": "String"
+      }
+    }
+  },
+  "companyItemsTitle": "Robe i usluge",
+  "@companyItemsTitle": {
+    "type": "text",
+    "description": ""
+  },
+  "companyUnitsTitle": "Jedinice mjere",
+  "@companyUnitsTitle": {
+    "type": "text",
+    "description": ""
+  },
+  "customersNoCustomers": "Trenutno nema dodanih kupaca.",
+  "@customersNoCustomers": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceNrLabel": "RAČUN br. {invoiceNr}",
+  "@invoiceNrLabel": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "invoiceNr": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicesNoInvoices": "Trenutno nema ispostavljenih računa",
+  "@invoicesNoInvoices": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemTypeLabel": "Vrsta",
+  "@invoiceItemTypeLabel": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemTypeService": "Usluga",
+  "@invoiceItemTypeService": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemTypeGoods": "Roba",
+  "@invoiceItemTypeGoods": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceUnitPiece": "Komad",
+  "@invoiceUnitPiece": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceUnitHour": "Sat",
+  "@invoiceUnitHour": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelCustomer": "Kupac",
+  "@invoiceLabelCustomer": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelPaymentDue": "Dospijeće plaćanja",
+  "@invoiceLabelPaymentDue": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelDateOfIssue": "Datum izdavanja računa",
+  "@invoiceLabelDateOfIssue": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelDateOfIssueTime": "Vrijeme izdavanja računa",
+  "@invoiceLabelDateOfIssueTime": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelDeliveryDate": "Datum predviđene isporuke",
+  "@invoiceLabelDeliveryDate": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelItems": "Proizvodi",
+  "@invoiceLabelItems": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelPrice": "Iznos",
+  "@invoiceLabelPrice": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelPriceWithCurrency": "Iznos {currency}",
+  "@invoiceLabelPriceWithCurrency": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "invoiceLabelExchangeRate": "Tečaj",
+  "@invoiceLabelExchangeRate": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelRebate": "Rabat",
+  "@invoiceLabelRebate": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelVat": "PDV",
+  "@invoiceLabelVat": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelStatementNumber": "Broj izvoda - uplatnice",
+  "@invoiceLabelStatementNumber": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelDateOfPayment": "Datum uplate",
+  "@invoiceLabelDateOfPayment": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelCashCharged": "Iznos naplaćen gotovinom",
+  "@invoiceLabelCashCharged": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceLabelTransferCharged": "Iznos naplaćen virmanom",
+  "@invoiceLabelTransferCharged": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceEditAddInvoiceItem": "Dodaj stavku računa",
+  "@invoiceEditAddInvoiceItem": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceEditBtnSave": "Spremi",
+  "@invoiceEditBtnSave": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemLabelName": "Trgovački naziv dobra - usluge",
+  "@invoiceItemLabelName": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemLabelUnit": "Jedinica mjere",
+  "@invoiceItemLabelUnit": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemLabelAmount": "Količina",
+  "@invoiceItemLabelAmount": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemLabelPrice": "Cijena",
+  "@invoiceItemLabelPrice": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceItemLabelRebate": "Rabat",
+  "@invoiceItemLabelRebate": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintPlaceAndDateOfIssue": "Mjesto, datum i vrijeme izdavanja: {place}, {date}",
+  "@invoicePrintPlaceAndDateOfIssue": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "place": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintPaymentDue": "Dospijeće plaćanja: {date}",
+  "@invoicePrintPaymentDue": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintDelivery": "Datum isporuke: {date}",
+  "@invoicePrintDelivery": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintPrice": "IZNOS",
+  "@invoicePrintPrice": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintValueWithCurrency": "{value} {currency}",
+  "@invoicePrintValueWithCurrency": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintRebate": "RABAT",
+  "@invoicePrintRebate": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintBasePrice": "OSNOVICA",
+  "@invoicePrintBasePrice": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintVat": "PDV (25%)",
+  "@invoicePrintVat": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintTotalPrice": "UKUPNI IZNOS",
+  "@invoicePrintTotalPrice": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintRemark": "Napomena",
+  "@invoicePrintRemark": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceRemarkServiceDomestic": "Oslobođeno PDV-a temeljem članka 90. st. 2  Zakona o PDV-u",
+  "@invoiceRemarkServiceDomestic": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceRemarkServiceForeign": "Oslobođeno PDV-a temeljem članka 17. st. 1 Zakona o PDV-u - reverse charge",
+  "@invoiceRemarkServiceForeign": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceRemarkGoodsDomestic": "Oslobođeno PDV-a temeljem članka 90. st. 2 Zakona o PDV-u",
+  "@invoiceRemarkGoodsDomestic": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceRemarkGoodsForeign": "Oslobođeno PDV-a temeljem članka 90. st. 2 Zakona o PDV-u",
+  "@invoiceRemarkGoodsForeign": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintRemarkExchangeRateInfo": "Konverzija u {domesticCurrency} je izračunata po srednjem tečaju Hrvatske narodne banke za {currency} ({value}) na datum {date}",
+  "@invoicePrintRemarkExchangeRateInfo": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "domesticCurrency": {
+        "type": "String"
+      },
+      "currency": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintInvoiceIssuedBy": "Račun ispostavio: {name}",
+  "@invoicePrintInvoiceIssuedBy": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintOperatorSign": "Oznaka operatera: {name}",
+  "@invoicePrintOperatorSign": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintMethodPaymentTransaction": "Način plaćanja: Transakcijski račun",
+  "@invoicePrintMethodPaymentTransaction": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintReferenceNr": "Poziv na broj: {value}",
+  "@invoicePrintReferenceNr": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintTableHeaderNr": "#",
+  "@invoicePrintTableHeaderNr": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintTableHeaderName": "Trgovački naziv dobra - usluge",
+  "@invoicePrintTableHeaderName": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintTableHeaderUnit": "JM",
+  "@invoicePrintTableHeaderUnit": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintTableHeaderAmount": "Količina",
+  "@invoicePrintTableHeaderAmount": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintTableHeaderPrice": "Cijena",
+  "@invoicePrintTableHeaderPrice": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintTableHeaderRebate": "Rabat",
+  "@invoicePrintTableHeaderRebate": {
+    "type": "text",
+    "description": ""
+  },
+  "invoicePrintTableHeaderPriceTotal": "Iznos",
+  "@invoicePrintTableHeaderPriceTotal": {
+    "type": "text",
+    "description": ""
+  }
+}

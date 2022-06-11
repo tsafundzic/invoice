@@ -1,0 +1,1 @@
+enum CustomerType {domestic, foreign}
