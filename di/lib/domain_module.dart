@@ -1,4 +1,5 @@
 import 'package:domain/company/usecase/company_use_case.dart';
+import 'package:domain/offer/usecase/offer_usecase.dart';
 import 'package:domain/user/usecase/user_state_notifier.dart';
 import 'package:domain/customer/usecase/customer_use_case.dart';
 import 'package:domain/invoice/usecase/invoices_use_case.dart';
@@ -22,3 +23,7 @@ final customersStreamProvider = StreamProvider((ref) => ref.watch(customerUseCas
 
 final invoiceUseCaseProvider = Provider((ref) => InvoicesUseCase(ref.watch(invoiceRepositoryProvider)));
 final invoicesStreamProvider = StreamProvider((ref) => ref.watch(invoiceUseCaseProvider).invoices);
+
+final offerUseCaseProvider = Provider((ref) => OfferUseCase(ref.watch(offerRepositoryProvider)));
+final offersStreamProvider = StreamProvider((ref) => ref.watch(offerUseCaseProvider).offers);
+

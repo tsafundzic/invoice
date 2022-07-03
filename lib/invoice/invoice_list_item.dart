@@ -4,17 +4,22 @@ import 'package:domain/customer/model/customer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_gen/gen_l10n/translations.dart';
 import 'package:invoice/common/extension.dart';
 import 'package:invoice/core/utils/invoice/invoice_utils.dart';
+import 'package:invoice/offers/offer_print.dart';
 
+import '../common/utils.dart';
 import '../core/utils/constants/route_constants.dart';
+import 'invoice_print.dart';
 
 class InvoiceListItem extends ConsumerWidget {
   final Invoice invoice;
   final Company company;
   final Customer customer;
+  final bool offer;
 
-  const InvoiceListItem(this.invoice, this.company, this.customer, {Key? key}) : super(key: key);
+  const InvoiceListItem(this.invoice, this.company, this.customer, {Key? key, this.offer = false}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -33,15 +38,15 @@ class InvoiceListItem extends ConsumerWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     IconButton(
-                      onPressed: () {
-                        //TODO
-                      },
+                      onPressed: () => (offer ? printOffer(context, invoice, company, customer) : printInvoice(context, invoice, company, customer)).then((value) {
+                        showSnackBar(context, offer ? Translations.of(context)!.offerSuccessfullyPrinted : Translations.of(context)!.invoiceSuccessfullyPrinted);
+                      }).catchError((onError) {
+                        showSnackBar(context, Translations.of(context)!.generalError);
+                      }),
                       icon: const Icon(Icons.print),
                     ),
                     IconButton(
-                      onPressed: () {
-                        //TODO
-                      },
+                      onPressed: () => context.pushNamed(invoiceEditRouteName, extra: invoice),
                       icon: const Icon(Icons.edit),
                     ),
                   ],
@@ -51,7 +56,7 @@ class InvoiceListItem extends ConsumerWidget {
                   style: Theme.of(context).textTheme.labelLarge,
                 ),
                 Text(
-                  invoice.customerId,
+                  customer.country,
                   style: Theme.of(context).textTheme.labelSmall,
                 ),
                 Text(
@@ -59,7 +64,7 @@ class InvoiceListItem extends ConsumerWidget {
                   style: Theme.of(context).textTheme.labelSmall,
                 ),
                 Text(
-                  formatCurrency(invoice.totalPrice),
+                  Translations.of(context)!.invoicePrintValueWithCurrency(formatCurrency(invoice.totalPrice), invoice.currency),
                   style: Theme.of(context).textTheme.labelLarge,
                 ),
               ],

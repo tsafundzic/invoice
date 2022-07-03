@@ -5,9 +5,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:domain/user/usecase/user_state_notifier.dart';
+import 'package:invoice/offers/offer_edit_screen.dart';
 import '../../company/company_edit_screen.dart';
 import '../../customer/customer_edit_screen.dart';
 import '../../dashboard/dashboard_screen.dart';
+import '../../invoice/invoice_edit_screen.dart';
 import '../../splash/splash_screen.dart';
 import '../../user/login_screen.dart';
 import 'constants/route_constants.dart';
@@ -73,6 +75,22 @@ class AppRouter {
         pageBuilder: (context, state) => MaterialPage<void>(
           key: state.pageKey,
           child: CustomerEditScreen(customer: state.extra as Customer?),
+        ),
+      ),
+      GoRoute(
+        name: invoiceEditRouteName,
+        path: invoiceEditRoutePath,
+        pageBuilder: (context, state) => MaterialPage<void>(
+          key: state.pageKey,
+          child: InvoiceEditScreen(extra: state.extra),
+        ),
+      ),
+      GoRoute(
+        name: offerEditRouteName,
+        path: offerEditRoutePath,
+        pageBuilder: (context, state) => MaterialPage<void>(
+          key: state.pageKey,
+          child: OfferEditScreen(extra: state.extra),
         ),
       ),
     ],

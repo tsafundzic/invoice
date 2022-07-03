@@ -6,8 +6,10 @@ import 'package:domain/customer/model/customer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/translations.dart';
+import 'package:go_router/go_router.dart';
 
 import '../core/custom_widgets.dart';
+import '../core/utils/constants/route_constants.dart';
 import 'invoice_list_item.dart';
 
 class InvoicesScreen extends ConsumerStatefulWidget {
@@ -28,9 +30,7 @@ class InvoicesScreenState extends ConsumerState<InvoicesScreen> {
                         data: (invoices) => Scaffold(
                           floatingActionButton: FloatingActionButton(
                             child: const Icon(Icons.add),
-                            onPressed: () {
-                              //TODO
-                            },
+                            onPressed: () => context.pushNamed(invoiceEditRouteName, extra: '${invoices.length + 1}-1-1'),
                           ),
                           body: invoices.isNotEmpty
                               ? ref.watch(customersStreamProvider).when(

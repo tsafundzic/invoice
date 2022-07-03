@@ -23,23 +23,23 @@ String invoiceUnitTranslations(BuildContext context, Unit unit) {
   }
 }
 
-String invoiceRemarkTranslations(BuildContext context, ItemType itemType, CustomerType customerType) {
+String invoiceNoteTranslations(BuildContext context, ItemType itemType, CustomerType customerType) {
   switch (itemType) {
     case ItemType.service:
       switch (customerType) {
         case CustomerType.domestic:
-          return Translations.of(context)!.invoiceRemarkServiceDomestic;
+          return Translations.of(context)!.invoiceNoteServiceDomestic;
 
         case CustomerType.foreign:
-          return Translations.of(context)!.invoiceRemarkServiceForeign;
+          return Translations.of(context)!.invoiceNoteServiceForeign;
       }
     case ItemType.goods:
       switch (customerType) {
         case CustomerType.domestic:
-          return Translations.of(context)!.invoiceRemarkGoodsDomestic;
+          return Translations.of(context)!.invoiceNoteGoodsDomestic;
 
         case CustomerType.foreign:
-          return Translations.of(context)!.invoiceRemarkGoodsForeign;
+          return Translations.of(context)!.invoiceNoteGoodsForeign;
       }
   }
 }

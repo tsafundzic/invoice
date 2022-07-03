@@ -402,7 +402,17 @@
     "type": "text",
     "description": ""
   },
-  "invoicePrintPlaceAndDateOfIssue": "Mjesto, datum i vrijeme izdavanja: {place}, {date}",
+  "invoicePrintInvoiceNr": "Invoice nr / Račun br. {invoiceNr}",
+  "@invoicePrintInvoiceNr": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "invoiceNr": {
+        "type": "String"
+      }
+    }
+  },
+  "invoicePrintPlaceAndDateOfIssue": "Place, date and time of issue / Mjesto, datum i vrijeme izdavanja: {place}, {date}",
   "@invoicePrintPlaceAndDateOfIssue": {
     "type": "text",
     "description": "",
@@ -415,7 +425,7 @@
       }
     }
   },
-  "invoicePrintPaymentDue": "Dospijeće plaćanja: {date}",
+  "invoicePrintPaymentDue": "Due date / Dospijeće plaćanja: {date}",
   "@invoicePrintPaymentDue": {
     "type": "text",
     "description": "",
@@ -425,7 +435,7 @@
       }
     }
   },
-  "invoicePrintDelivery": "Datum isporuke: {date}",
+  "invoicePrintDelivery": "Delivery date / Datum isporuke: {date}",
   "@invoicePrintDelivery": {
     "type": "text",
     "description": "",
@@ -435,7 +445,7 @@
       }
     }
   },
-  "invoicePrintPrice": "IZNOS",
+  "invoicePrintPrice": "AMOUNT / IZNOS",
   "@invoicePrintPrice": {
     "type": "text",
     "description": ""
@@ -453,53 +463,53 @@
       }
     }
   },
-  "invoicePrintRebate": "RABAT",
+  "invoicePrintRebate": "RABATT / RABAT",
   "@invoicePrintRebate": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintBasePrice": "OSNOVICA",
+  "invoicePrintBasePrice": "TAX BASE / OSNOVICA",
   "@invoicePrintBasePrice": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintVat": "PDV (25%)",
+  "invoicePrintVat": "VAT / PDV",
   "@invoicePrintVat": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintTotalPrice": "UKUPNI IZNOS",
+  "invoicePrintTotalPrice": "TOTAL / UKUPNI IZNOS",
   "@invoicePrintTotalPrice": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintRemark": "Napomena",
-  "@invoicePrintRemark": {
+  "invoicePrintNote": "Note / Napomena",
+  "@invoicePrintNote": {
     "type": "text",
     "description": ""
   },
-  "invoiceRemarkServiceDomestic": "Oslobođeno PDV-a temeljem članka 90. st. 2  Zakona o PDV-u",
-  "@invoiceRemarkServiceDomestic": {
+  "invoiceNoteServiceDomestic": "Oslobođeno PDV-a temeljem članka 90. st. 2  Zakona o PDV-u",
+  "@invoiceNoteServiceDomestic": {
     "type": "text",
     "description": ""
   },
-  "invoiceRemarkServiceForeign": "Oslobođeno PDV-a temeljem članka 17. st. 1 Zakona o PDV-u - reverse charge",
-  "@invoiceRemarkServiceForeign": {
+  "invoiceNoteServiceForeign": "Reverse charge Law on Vat Article 17 / Oslobođeno PDV-a temeljem članka 17. st. 1 Zakona o PDV-u - reverse charge",
+  "@invoiceNoteServiceForeign": {
     "type": "text",
     "description": ""
   },
-  "invoiceRemarkGoodsDomestic": "Oslobođeno PDV-a temeljem članka 90. st. 2 Zakona o PDV-u",
-  "@invoiceRemarkGoodsDomestic": {
+  "invoiceNoteGoodsDomestic": "Oslobođeno PDV-a temeljem članka 90. st. 2 Zakona o PDV-u",
+  "@invoiceNoteGoodsDomestic": {
     "type": "text",
     "description": ""
   },
-  "invoiceRemarkGoodsForeign": "Oslobođeno PDV-a temeljem članka 90. st. 2 Zakona o PDV-u",
-  "@invoiceRemarkGoodsForeign": {
+  "invoiceNoteGoodsForeign": "Oslobođeno PDV-a temeljem članka 90. st. 2 Zakona o PDV-u",
+  "@invoiceNoteGoodsForeign": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintRemarkExchangeRateInfo": "Konverzija u {domesticCurrency} je izračunata po srednjem tečaju Hrvatske narodne banke za {currency} ({value}) na datum {date}",
-  "@invoicePrintRemarkExchangeRateInfo": {
+  "invoicePrintNoteExchangeRateInfo": "The conversion to {domesticCurrency} was calculated according to the middle exchange rate of the Croatian National Bank for {currency} ({value}) on {date} / Konverzija u {domesticCurrency} je izračunata po srednjem tečaju Hrvatske narodne banke za {currency} ({value}) na datum {date}",
+  "@invoicePrintNoteExchangeRateInfo": {
     "type": "text",
     "description": "",
     "placeholders": {
@@ -517,7 +527,7 @@
       }
     }
   },
-  "invoicePrintInvoiceIssuedBy": "Račun ispostavio: {name}",
+  "invoicePrintInvoiceIssuedBy": "Invoice created by / Račun ispostavio: {name}",
   "@invoicePrintInvoiceIssuedBy": {
     "type": "text",
     "description": "",
@@ -527,7 +537,7 @@
       }
     }
   },
-  "invoicePrintOperatorSign": "Oznaka operatera: {name}",
+  "invoicePrintOperatorSign": "Operator sign / Oznaka operatera: {name}",
   "@invoicePrintOperatorSign": {
     "type": "text",
     "description": "",
@@ -537,12 +547,12 @@
       }
     }
   },
-  "invoicePrintMethodPaymentTransaction": "Način plaćanja: Transakcijski račun",
+  "invoicePrintMethodPaymentTransaction": "Payment: transaction account / Način plaćanja: Transakcijski račun",
   "@invoicePrintMethodPaymentTransaction": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintReferenceNr": "Poziv na broj: {value}",
+  "invoicePrintReferenceNr": "Reference / Poziv na broj: {value}",
   "@invoicePrintReferenceNr": {
     "type": "text",
     "description": "",
@@ -557,33 +567,86 @@
     "type": "text",
     "description": ""
   },
-  "invoicePrintTableHeaderName": "Trgovački naziv dobra - usluge",
+  "invoicePrintTableHeaderName": "Trade name of good - services\nTrgovački naziv dobra - usluge",
   "@invoicePrintTableHeaderName": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintTableHeaderUnit": "JM",
+  "invoicePrintTableHeaderUnit": "UM\nJM",
   "@invoicePrintTableHeaderUnit": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintTableHeaderAmount": "Količina",
+  "invoicePrintTableHeaderAmount": "Quantity\nKoličina",
   "@invoicePrintTableHeaderAmount": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintTableHeaderPrice": "Cijena",
+  "invoicePrintTableHeaderPrice": "Price\nCijena",
   "@invoicePrintTableHeaderPrice": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintTableHeaderRebate": "Rabat",
+  "invoicePrintTableHeaderRebate": "Rabatt\nRabat",
   "@invoicePrintTableHeaderRebate": {
     "type": "text",
     "description": ""
   },
-  "invoicePrintTableHeaderPriceTotal": "Iznos",
+  "invoicePrintTableHeaderPriceTotal": "Amount\nIznos",
   "@invoicePrintTableHeaderPriceTotal": {
+    "type": "text",
+    "description": ""
+  },
+  "invoiceSuccessfullyPrinted": "Račun je generiran",
+  "@invoiceSuccessfullyPrinted": {
+    "type": "text",
+    "description": ""
+  },
+  "offersNoOffers": "Trenutno nema ispostavljenih ponuda",
+  "@offersNoOffers": {
+    "type": "text",
+    "description": ""
+  },
+  "offerPrintOfferNr": "Offer nr / Ponuda br. {invoiceNr}",
+  "@offerPrintOfferNr": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "invoiceNr": {
+        "type": "String"
+      }
+    }
+  },
+  "offerPrintNoteValidity": "The validity period of the offer is {period} working days. Delivery period is {delivery} days from the acceptance of the offer. / Rok valjanosti ponude je {period} radnih dana. Rok isporuke je {delivery} dana od prihvaćanja ponude.",
+  "@offerPrintNoteValidity": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "period": {
+        "type": "String"
+      },
+      "delivery": {
+        "type": "String"
+      }
+    }
+  },
+  "offerPrintMadeElectronically": "Offer was made electronically and it is valid without stamp and signature. / Ponuda je napravljena elektronički i važeća je bez potpisa i žiga.",
+  "@offerPrintMadeElectronically": {
+    "type": "text",
+    "description": ""
+  },
+  "offerPrintOfferMadeBy": "Offer was made by / Ponudu izradio: {name}",
+  "@offerPrintOfferMadeBy": {
+    "type": "text",
+    "description": "",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "offerSuccessfullyPrinted": "Ponuda je generirana",
+  "@offerSuccessfullyPrinted": {
     "type": "text",
     "description": ""
   }

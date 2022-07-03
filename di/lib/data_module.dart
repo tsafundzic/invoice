@@ -1,5 +1,7 @@
 import 'package:data/invoice/remote/invoice_remote_data_source_impl.dart';
 import 'package:data/customer/remote/customer_remote_data_source_impl.dart';
+import 'package:data/offer/remote/offer_remote_data_source_impl.dart';
+import 'package:data/offer/remote/offer_repository_impl.dart';
 import 'package:data/user/remote/user_remote_data_source_impl.dart';
 import 'package:data/user/user_repository_impl.dart';
 import 'package:data/company/company_repository_impl.dart';
@@ -25,3 +27,6 @@ final customerRepositoryProvider = Provider((ref) => CustomerRepositoryImpl(ref.
 
 final invoiceRemoteDataSourceProvider = Provider((ref) => InvoiceRemoteDataSourceImpl(ref.watch(firebaseFirestoreProvider)));
 final invoiceRepositoryProvider = Provider((ref) => InvoiceRepositoryImpl(ref.watch(invoiceRemoteDataSourceProvider)));
+
+final offerRemoteDataSourceProvider = Provider((ref) => OfferRemoteDataSourceImpl(ref.watch(firebaseFirestoreProvider)));
+final offerRepositoryProvider = Provider((ref) => OfferRepositoryImpl(ref.watch(offerRemoteDataSourceProvider)));
